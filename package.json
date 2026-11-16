@@ -1,0 +1,28 @@
+{
+  "name": "aefonestopreports",
+  "version": "1.0.0",
+  "description": "One Stop Marketing client reporting portal for Allied Elite Financial",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BernardTeamCerium/aefonestopreports.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/BernardTeamCerium/aefonestopreports/issues"
+  },
+  "homepage": "https://github.com/BernardTeamCerium/aefonestopreports#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "chart.js": "^4.6.1",
+    "express": "^4.22.3",
+    "express-session": "^1.19.0"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,835 @@
+{
+  "settings": {
+    "clientName": "Allied Elite Financial",
+    "agencyName": "One Stop Marketing"
+  },
+  "agents": [
+    {
+      "id": "a1",
+      "name": "Jordan Mitchell",
+      "title": "Financial Professional",
+      "websiteUrl": "https://jordanmitchell.alliedelitefinancial.com",
+      "status": "active",
+      "launchDate": "2026-03-26",
+      "socials": [
+        {
+          "platform": "Facebook",
+          "handle": "@jordanmitchellaef",
+          "url": "",
+          "followers": 3647
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@jordanmitchellaef",
+          "url": "",
+          "followers": 1583
+        },
+        {
+          "platform": "TikTok",
+          "handle": "@jordanmitchellaef",
+          "url": "",
+          "followers": 1441
+        }
+      ],
+      "monthly": {
+        "2026-06": {
+          "posts": 11,
+          "visitors": 724,
+          "pageViews": 1346,
+          "leads": 10
+        },
+        "2026-07": {
+          "posts": 17,
+          "visitors": 830,
+          "pageViews": 1523,
+          "leads": 18
+        },
+        "2026-08": {
+          "posts": 16,
+          "visitors": 968,
+          "pageViews": 1164,
+          "leads": 11
+        },
+        "2026-09": {
+          "posts": 16,
+          "visitors": 957,
+          "pageViews": 918,
+          "leads": 18
+        },
+        "2026-10": {
+          "posts": 14,
+          "visitors": 1258,
+          "pageViews": 2560,
+          "leads": 6
+        },
+        "2026-11": {
+          "posts": 14,
+          "visitors": 1360,
+          "pageViews": 2502,
+          "leads": 17
+        }
+      }
+    },
+    {
+      "id": "a2",
+      "name": "Alicia Reyes",
+      "title": "Financial Professional",
+      "websiteUrl": "https://aliciareyes.alliedelitefinancial.com",
+      "status": "active",
+      "launchDate": "2026-03-10",
+      "socials": [
+        {
+          "platform": "Facebook",
+          "handle": "@aliciareyesaef",
+          "url": "",
+          "followers": 2197
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@aliciareyesaef",
+          "url": "",
+          "followers": 2514
+        },
+        {
+          "platform": "LinkedIn",
+          "handle": "@aliciareyesaef",
+          "url": "",
+          "followers": 1048
+        }
+      ],
+      "monthly": {
+        "2026-06": {
+          "posts": 12,
+          "visitors": 529,
+          "pageViews": 1013,
+          "leads": 24
+        },
+        "2026-07": {
+          "posts": 15,
+          "visitors": 811,
+          "pageViews": 2048,
+          "leads": 4
+        },
+        "2026-08": {
+          "posts": 11,
+          "visitors": 761,
+          "pageViews": 1627,
+          "leads": 12
+        },
+        "2026-09": {
+          "posts": 10,
+          "visitors": 1144,
+          "pageViews": 921,
+          "leads": 11
+        },
+        "2026-10": {
+          "posts": 12,
+          "visitors": 1009,
+          "pageViews": 2803,
+          "leads": 14
+        },
+        "2026-11": {
+          "posts": 10,
+          "visitors": 822,
+          "pageViews": 1595,
+          "leads": 11
+        }
+      }
+    },
+    {
+      "id": "a3",
+      "name": "Marcus Bennett",
+      "title": "Financial Professional",
+      "websiteUrl": "https://marcusbennett.alliedelitefinancial.com",
+      "status": "active",
+      "launchDate": "2026-02-13",
+      "socials": [
+        {
+          "platform": "Facebook",
+          "handle": "@marcusbennettaef",
+          "url": "",
+          "followers": 2433
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@marcusbennettaef",
+          "url": "",
+          "followers": 681
+        },
+        {
+          "platform": "LinkedIn",
+          "handle": "@marcusbennettaef",
+          "url": "",
+          "followers": 3699
+        },
+        {
+          "platform": "YouTube",
+          "handle": "@marcusbennettaef",
+          "url": "",
+          "followers": 3556
+        }
+      ],
+      "monthly": {
+        "2026-06": {
+          "posts": 16,
+          "visitors": 662,
+          "pageViews": 1323,
+          "leads": 14
+        },
+        "2026-07": {
+          "posts": 16,
+          "visitors": 964,
+          "pageViews": 1294,
+          "leads": 19
+        },
+        "2026-08": {
+          "posts": 11,
+          "visitors": 782,
+          "pageViews": 1353,
+          "leads": 10
+        },
+        "2026-09": {
+          "posts": 13,
+          "visitors": 1043,
+          "pageViews": 2487,
+          "leads": 5
+        },
+        "2026-10": {
+          "posts": 18,
+          "visitors": 445,
+          "pageViews": 1732,
+          "leads": 6
+        },
+        "2026-11": {
+          "posts": 9,
+          "visitors": 1437,
+          "pageViews": 1453,
+          "leads": 17
+        }
+      }
+    },
+    {
+      "id": "a4",
+      "name": "Priya Sharma",
+      "title": "Financial Professional",
+      "websiteUrl": "https://priyasharma.alliedelitefinancial.com",
+      "status": "inactive",
+      "launchDate": "2026-04-26",
+      "socials": [
+        {
+          "platform": "Facebook",
+          "handle": "@priyasharmaaef",
+          "url": "",
+          "followers": 231
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@priyasharmaaef",
+          "url": "",
+          "followers": 3615
+        },
+        {
+          "platform": "LinkedIn",
+          "handle": "@priyasharmaaef",
+          "url": "",
+          "followers": 874
+        },
+        {
+          "platform": "TikTok",
+          "handle": "@priyasharmaaef",
+          "url": "",
+          "followers": 3880
+        },
+        {
+          "platform": "YouTube",
+          "handle": "@priyasharmaaef",
+          "url": "",
+          "followers": 2326
+        }
+      ],
+      "monthly": {
+        "2026-06": {
+          "posts": 17,
+          "visitors": 429,
+          "pageViews": 615,
+          "leads": 8
+        },
+        "2026-07": {
+          "posts": 9,
+          "visitors": 281,
+          "pageViews": 1640,
+          "leads": 8
+        },
+        "2026-08": {
+          "posts": 17,
+          "visitors": 704,
+          "pageViews": 1938,
+          "leads": 8
+        },
+        "2026-09": {
+          "posts": 19,
+          "visitors": 548,
+          "pageViews": 1529,
+          "leads": 23
+        },
+        "2026-10": {
+          "posts": 0,
+          "visitors": 25,
+          "pageViews": 79,
+          "leads": 0
+        },
+        "2026-11": {
+          "posts": 0,
+          "visitors": 20,
+          "pageViews": 113,
+          "leads": 0
+        }
+      }
+    },
+    {
+      "id": "a5",
+      "name": "Derek Coleman",
+      "title": "Financial Professional",
+      "websiteUrl": "https://derekcoleman.alliedelitefinancial.com",
+      "status": "active",
+      "launchDate": "2026-02-12",
+      "socials": [
+        {
+          "platform": "Facebook",
+          "handle": "@derekcolemanaef",
+          "url": "",
+          "followers": 3565
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@derekcolemanaef",
+          "url": "",
+          "followers": 2301
+        },
+        {
+          "platform": "LinkedIn",
+          "handle": "@derekcolemanaef",
+          "url": "",
+          "followers": 1503
+        }
+      ],
+      "monthly": {
+        "2026-06": {
+          "posts": 11,
+          "visitors": 617,
+          "pageViews": 673,
+          "leads": 20
+        },
+        "2026-07": {
+          "posts": 16,
+          "visitors": 800,
+          "pageViews": 1453,
+          "leads": 4
+        },
+        "2026-08": {
+          "posts": 9,
+          "visitors": 1050,
+          "pageViews": 971,
+          "leads": 18
+        },
+        "2026-09": {
+          "posts": 19,
+          "visitors": 373,
+          "pageViews": 2497,
+          "leads": 22
+        },
+        "2026-10": {
+          "posts": 20,
+          "visitors": 1288,
+          "pageViews": 2473,
+          "leads": 12
+        },
+        "2026-11": {
+          "posts": 11,
+          "visitors": 1157,
+          "pageViews": 2936,
+          "leads": 12
+        }
+      }
+    },
+    {
+      "id": "a6",
+      "name": "Natalie Brooks",
+      "title": "Financial Professional",
+      "websiteUrl": "https://nataliebrooks.alliedelitefinancial.com",
+      "status": "active",
+      "launchDate": "2026-04-11",
+      "socials": [
+        {
+          "platform": "Facebook",
+          "handle": "@nataliebrooksaef",
+          "url": "",
+          "followers": 3041
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@nataliebrooksaef",
+          "url": "",
+          "followers": 250
+        },
+        {
+          "platform": "LinkedIn",
+          "handle": "@nataliebrooksaef",
+          "url": "",
+          "followers": 1301
+        },
+        {
+          "platform": "TikTok",
+          "handle": "@nataliebrooksaef",
+          "url": "",
+          "followers": 2236
+        }
+      ],
+      "monthly": {
+        "2026-06": {
+          "posts": 17,
+          "visitors": 525,
+          "pageViews": 878,
+          "leads": 10
+        },
+        "2026-07": {
+          "posts": 20,
+          "visitors": 1004,
+          "pageViews": 1663,
+          "leads": 22
+        },
+        "2026-08": {
+          "posts": 19,
+          "visitors": 471,
+          "pageViews": 1864,
+          "leads": 6
+        },
+        "2026-09": {
+          "posts": 14,
+          "visitors": 832,
+          "pageViews": 2285,
+          "leads": 24
+        },
+        "2026-10": {
+          "posts": 14,
+          "visitors": 551,
+          "pageViews": 1813,
+          "leads": 7
+        },
+        "2026-11": {
+          "posts": 16,
+          "visitors": 942,
+          "pageViews": 2218,
+          "leads": 14
+        }
+      }
+    },
+    {
+      "id": "a7",
+      "name": "Samuel Ortiz",
+      "title": "Financial Professional",
+      "websiteUrl": "https://samuelortiz.alliedelitefinancial.com",
+      "status": "active",
+      "launchDate": "2026-02-06",
+      "socials": [
+        {
+          "platform": "Facebook",
+          "handle": "@samuelortizaef",
+          "url": "",
+          "followers": 2748
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@samuelortizaef",
+          "url": "",
+          "followers": 1087
+        },
+        {
+          "platform": "TikTok",
+          "handle": "@samuelortizaef",
+          "url": "",
+          "followers": 1907
+        }
+      ],
+      "monthly": {
+        "2026-06": {
+          "posts": 11,
+          "visitors": 679,
+          "pageViews": 1201,
+          "leads": 5
+        },
+        "2026-07": {
+          "posts": 17,
+          "visitors": 879,
+          "pageViews": 2108,
+          "leads": 23
+        },
+        "2026-08": {
+          "posts": 16,
+          "visitors": 1083,
+          "pageViews": 787,
+          "leads": 20
+        },
+        "2026-09": {
+          "posts": 15,
+          "visitors": 981,
+          "pageViews": 2526,
+          "leads": 4
+        },
+        "2026-10": {
+          "posts": 10,
+          "visitors": 447,
+          "pageViews": 1113,
+          "leads": 5
+        },
+        "2026-11": {
+          "posts": 8,
+          "visitors": 1029,
+          "pageViews": 3078,
+          "leads": 7
+        }
+      }
+    },
+    {
+      "id": "a8",
+      "name": "Grace Whitfield",
+      "title": "Financial Professional",
+      "websiteUrl": "https://gracewhitfield.alliedelitefinancial.com",
+      "status": "active",
+      "launchDate": "2026-01-12",
+      "socials": [
+        {
+          "platform": "Facebook",
+          "handle": "@gracewhitfieldaef",
+          "url": "",
+          "followers": 502
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@gracewhitfieldaef",
+          "url": "",
+          "followers": 1052
+        },
+        {
+          "platform": "LinkedIn",
+          "handle": "@gracewhitfieldaef",
+          "url": "",
+          "followers": 3708
+        },
+        {
+          "platform": "YouTube",
+          "handle": "@gracewhitfieldaef",
+          "url": "",
+          "followers": 3143
+        }
+      ],
+      "monthly": {
+        "2026-06": {
+          "posts": 17,
+          "visitors": 508,
+          "pageViews": 1183,
+          "leads": 4
+        },
+        "2026-07": {
+          "posts": 11,
+          "visitors": 868,
+          "pageViews": 2200,
+          "leads": 6
+        },
+        "2026-08": {
+          "posts": 19,
+          "visitors": 720,
+          "pageViews": 956,
+          "leads": 8
+        },
+        "2026-09": {
+          "posts": 15,
+          "visitors": 491,
+          "pageViews": 964,
+          "leads": 9
+        },
+        "2026-10": {
+          "posts": 16,
+          "visitors": 904,
+          "pageViews": 1884,
+          "leads": 25
+        },
+        "2026-11": {
+          "posts": 9,
+          "visitors": 830,
+          "pageViews": 1664,
+          "leads": 3
+        }
+      }
+    },
+    {
+      "id": "a9",
+      "name": "Tyrell Jackson",
+      "title": "Financial Professional",
+      "websiteUrl": "https://tyrelljackson.alliedelitefinancial.com",
+      "status": "inactive",
+      "launchDate": "2026-02-03",
+      "socials": [
+        {
+          "platform": "Facebook",
+          "handle": "@tyrelljacksonaef",
+          "url": "",
+          "followers": 1470
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@tyrelljacksonaef",
+          "url": "",
+          "followers": 3548
+        },
+        {
+          "platform": "LinkedIn",
+          "handle": "@tyrelljacksonaef",
+          "url": "",
+          "followers": 2877
+        },
+        {
+          "platform": "YouTube",
+          "handle": "@tyrelljacksonaef",
+          "url": "",
+          "followers": 2992
+        }
+      ],
+      "monthly": {
+        "2026-06": {
+          "posts": 20,
+          "visitors": 771,
+          "pageViews": 1527,
+          "leads": 16
+        },
+        "2026-07": {
+          "posts": 12,
+          "visitors": 577,
+          "pageViews": 1452,
+          "leads": 14
+        },
+        "2026-08": {
+          "posts": 15,
+          "visitors": 892,
+          "pageViews": 1898,
+          "leads": 17
+        },
+        "2026-09": {
+          "posts": 17,
+          "visitors": 1122,
+          "pageViews": 2425,
+          "leads": 25
+        },
+        "2026-10": {
+          "posts": 0,
+          "visitors": 38,
+          "pageViews": 79,
+          "leads": 0
+        },
+        "2026-11": {
+          "posts": 0,
+          "visitors": 58,
+          "pageViews": 118,
+          "leads": 0
+        }
+      }
+    },
+    {
+      "id": "a10",
+      "name": "Monica Chen",
+      "title": "Financial Professional",
+      "websiteUrl": "https://monicachen.alliedelitefinancial.com",
+      "status": "active",
+      "launchDate": "2026-01-09",
+      "socials": [
+        {
+          "platform": "Facebook",
+          "handle": "@monicachenaef",
+          "url": "",
+          "followers": 3696
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@monicachenaef",
+          "url": "",
+          "followers": 155
+        },
+        {
+          "platform": "LinkedIn",
+          "handle": "@monicachenaef",
+          "url": "",
+          "followers": 657
+        },
+        {
+          "platform": "TikTok",
+          "handle": "@monicachenaef",
+          "url": "",
+          "followers": 1680
+        }
+      ],
+      "monthly": {
+        "2026-06": {
+          "posts": 11,
+          "visitors": 769,
+          "pageViews": 746,
+          "leads": 23
+        },
+        "2026-07": {
+          "posts": 18,
+          "visitors": 743,
+          "pageViews": 1788,
+          "leads": 15
+        },
+        "2026-08": {
+          "posts": 13,
+          "visitors": 1013,
+          "pageViews": 1722,
+          "leads": 22
+        },
+        "2026-09": {
+          "posts": 11,
+          "visitors": 947,
+          "pageViews": 1643,
+          "leads": 12
+        },
+        "2026-10": {
+          "posts": 10,
+          "visitors": 937,
+          "pageViews": 1368,
+          "leads": 23
+        },
+        "2026-11": {
+          "posts": 18,
+          "visitors": 752,
+          "pageViews": 2490,
+          "leads": 22
+        }
+      }
+    }
+  ],
+  "managers": [
+    {
+      "id": "m1",
+      "name": "Victoria Lane",
+      "region": "Southeast",
+      "pageUrl": "https://alliedelitefinancial.com/team/victorialane",
+      "status": "active",
+      "launchDate": "2026-04-15",
+      "agentsManaged": 8,
+      "monthly": {
+        "2026-06": {
+          "visitors": 424,
+          "pageViews": 2494,
+          "leads": 27
+        },
+        "2026-07": {
+          "visitors": 670,
+          "pageViews": 1538,
+          "leads": 29
+        },
+        "2026-08": {
+          "visitors": 1330,
+          "pageViews": 1603,
+          "leads": 8
+        },
+        "2026-09": {
+          "visitors": 1329,
+          "pageViews": 1387,
+          "leads": 25
+        },
+        "2026-10": {
+          "visitors": 1371,
+          "pageViews": 3228,
+          "leads": 8
+        },
+        "2026-11": {
+          "visitors": 1164,
+          "pageViews": 3294,
+          "leads": 29
+        }
+      }
+    },
+    {
+      "id": "m2",
+      "name": "Robert Hayes",
+      "region": "Midwest",
+      "pageUrl": "https://alliedelitefinancial.com/team/roberthayes",
+      "status": "active",
+      "launchDate": "2026-04-15",
+      "agentsManaged": 10,
+      "monthly": {
+        "2026-06": {
+          "visitors": 1047,
+          "pageViews": 2688,
+          "leads": 23
+        },
+        "2026-07": {
+          "visitors": 1287,
+          "pageViews": 2424,
+          "leads": 8
+        },
+        "2026-08": {
+          "visitors": 610,
+          "pageViews": 2611,
+          "leads": 11
+        },
+        "2026-09": {
+          "visitors": 1279,
+          "pageViews": 1927,
+          "leads": 11
+        },
+        "2026-10": {
+          "visitors": 1402,
+          "pageViews": 2948,
+          "leads": 25
+        },
+        "2026-11": {
+          "visitors": 1063,
+          "pageViews": 3733,
+          "leads": 6
+        }
+      }
+    },
+    {
+      "id": "m3",
+      "name": "Elena Morales",
+      "region": "West Coast",
+      "pageUrl": "https://alliedelitefinancial.com/team/elenamorales",
+      "status": "active",
+      "launchDate": "2026-04-15",
+      "agentsManaged": 12,
+      "monthly": {
+        "2026-06": {
+          "visitors": 847,
+          "pageViews": 2722,
+          "leads": 21
+        },
+        "2026-07": {
+          "visitors": 1365,
+          "pageViews": 1291,
+          "leads": 28
+        },
+        "2026-08": {
+          "visitors": 1111,
+          "pageViews": 3093,
+          "leads": 16
+        },
+        "2026-09": {
+          "visitors": 1593,
+          "pageViews": 3168,
+          "leads": 23
+        },
+        "2026-10": {
+          "visitors": 1719,
+          "pageViews": 3474,
+          "leads": 10
+        },
+        "2026-11": {
+          "visitors": 1592,
+          "pageViews": 2006,
+          "leads": 8
+        }
+      }
+    }
+  ]
+}
