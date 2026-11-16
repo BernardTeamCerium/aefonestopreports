@@ -1,5 +1,5 @@
 node_modules/
-data/db.json
-data/users.json
-data/session-secret
+public/vendor/
+data/local/
+.netlify/
 .env
