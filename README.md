@@ -21,9 +21,11 @@ Use the **Month** selector in the header to switch which month the numbers refle
 ## Netlify setup (one time)
 1. In Netlify: **Add new site → Import from Git →** pick `aefonestopreports`. Build settings are read from `netlify.toml` automatically (build `npm run build`, publish `public`).
 2. **Site configuration → Environment variables**, add:
-   - `SESSION_SECRET` – any long random string (32+ characters)
    - `ADMIN_PASSWORD` – first password for `onestop`
    - `CLIENT_PASSWORD` – first password for `alliedelite`
+   - *(optional)* `SESSION_SECRET` – if not set, the site generates and stores its own.
+
+   Make sure each variable's **Scopes** include **Functions** (or "All scopes").
 3. **Deploys → Trigger deploy** (environment variables only apply to new deploys).
 
 The passwords are used once to create the logins on first sign-in; after that, change them under **Manage Data → Logins** (changing a password signs that user out everywhere).

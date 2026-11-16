@@ -4,7 +4,6 @@
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
-import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { handle } from '../src/api.mjs';
 
@@ -14,7 +13,6 @@ const dataDir = path.join(root, 'data', 'local');
 fs.mkdirSync(dataDir, { recursive: true });
 
 const env = { ...process.env };
-env.SESSION_SECRET ||= crypto.randomBytes(32).toString('hex');
 const store = {
   async get(key) { try { return JSON.parse(fs.readFileSync(path.join(dataDir, key + '.json'), 'utf8')); } catch { return null; } },
   async set(key, value) { fs.writeFileSync(path.join(dataDir, key + '.json'), JSON.stringify(value, null, 2)); },

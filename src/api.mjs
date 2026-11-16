@@ -17,27 +17,33 @@ function json(body, status = 200, headers = {}) {
 }
 
 /* ---------- stateless signed session cookie ---------- */
-function secret(env) {
-  const s = env.SESSION_SECRET;
-  if (!s || s.length < 16) throw new ConfigError('SESSION_SECRET is not set (needs 16+ characters).');
-  return s;
+// Uses SESSION_SECRET if provided; otherwise generates one and keeps it in storage,
+// so the site works with only the two password variables set.
+async function getSecret(env, store) {
+  const fromEnv = (env.SESSION_SECRET || '').trim();
+  if (fromEnv.length >= 16) return fromEnv;
+  const saved = await store.get('session-secret');
+  if (saved && typeof saved.value === 'string' && saved.value.length >= 32) return saved.value;
+  const value = crypto.randomBytes(32).toString('hex');
+  await store.set('session-secret', { value });
+  return value;
 }
 const b64 = s => Buffer.from(s).toString('base64url');
-const sign = (data, env) => crypto.createHmac('sha256', secret(env)).update(data).digest('base64url');
+const sign = (data, key) => crypto.createHmac('sha256', key).update(data).digest('base64url');
 
-function makeCookie(user, env, secure) {
+function makeCookie(user, key, secure) {
   const payload = b64(JSON.stringify({ u: user.username, r: user.role, n: user.name, v: user.version || 1, exp: Date.now() + SESSION_HOURS * 3600e3 }));
-  const token = `${payload}.${sign(payload, env)}`;
+  const token = `${payload}.${sign(payload, key)}`;
   return `${COOKIE}=${token}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${SESSION_HOURS * 3600}${secure ? '; Secure' : ''}`;
 }
 const clearCookie = secure => `${COOKIE}=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0${secure ? '; Secure' : ''}`;
 
-async function readSession(request, env, store) {
+async function readSession(request, env, store, key) {
   const m = (request.headers.get('cookie') || '').match(new RegExp(`(?:^|;\\s*)${COOKIE}=([^;]+)`));
   if (!m) return null;
   const [payload, sig] = m[1].split('.');
   if (!payload || !sig) return null;
-  const expected = sign(payload, env);
+  const expected = sign(payload, key);
   if (sig.length !== expected.length || !crypto.timingSafeEqual(Buffer.from(sig), Buffer.from(expected))) return null;
   let s;
   try { s = JSON.parse(Buffer.from(payload, 'base64url').toString()); } catch { return null; }
@@ -54,7 +60,7 @@ class ConfigError extends Error {}
 async function getUsers(env, store) {
   const users = await store.get('users');
   if (Array.isArray(users) && users.length) return users;
-  const adminPw = env.ADMIN_PASSWORD, clientPw = env.CLIENT_PASSWORD;
+  const adminPw = (env.ADMIN_PASSWORD || '').trim(), clientPw = (env.CLIENT_PASSWORD || '').trim();
   if (!adminPw || !clientPw) throw new ConfigError('ADMIN_PASSWORD and CLIENT_PASSWORD must be set for the first sign-in.');
   const seeded = [
     { username: env.ADMIN_USERNAME || 'onestop', role: 'admin', name: 'One Stop Marketing', hash: bcrypt.hashSync(adminPw, 10), version: 1 },
@@ -93,6 +99,8 @@ export async function handle(request, { store, env, ip = 'local' }) {
   const body = async () => { try { return await request.json(); } catch { return {}; } };
 
   try {
+    const key = await getSecret(env, store);
+
     if (route === 'login' && method === 'POST') {
       if (throttled(ip)) return json({ error: 'Too many attempts. Try again in a few minutes.' }, 429);
       const { username, password } = await body();
@@ -104,12 +112,12 @@ export async function handle(request, { store, env, ip = 'local' }) {
       }
       attempts.delete(ip);
       const pub = { username: user.username, role: user.role, name: user.name };
-      return json({ user: pub }, 200, { 'Set-Cookie': makeCookie(user, env, secure) });
+      return json({ user: pub }, 200, { 'Set-Cookie': makeCookie(user, key, secure) });
     }
 
     if (route === 'logout' && method === 'POST') return json({ ok: true }, 200, { 'Set-Cookie': clearCookie(secure) });
 
-    const user = await readSession(request, env, store);
+    const user = await readSession(request, env, store, key);
     if (!user) return json({ error: 'Not signed in' }, 401);
     const isAdmin = user.role === 'admin';
     const adminOnly = () => json({ error: 'Admin only' }, 403);
@@ -143,7 +151,7 @@ export async function handle(request, { store, env, ip = 'local' }) {
       target.version = (target.version || 1) + 1;
       await store.set('users', users);
       // Keep the admin signed in if they changed their own password.
-      const headers = target.username === user.username ? { 'Set-Cookie': makeCookie(target, env, secure) } : {};
+      const headers = target.username === user.username ? { 'Set-Cookie': makeCookie(target, key, secure) } : {};
       return json({ ok: true }, 200, headers);
     }
 
