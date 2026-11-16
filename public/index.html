@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>One Stop Marketing · Client Portal</title>
-  <link rel="icon" href="/assets/logo.png">
+  <title>One Stop Marketing Solutions · Client Portal</title>
+  <link rel="icon" href="/assets/icon.png">
+  <meta name="theme-color" content="#161616">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
@@ -12,7 +13,7 @@
   <section id="login-view" class="login-wrap" hidden>
     <form id="login-form" class="login-card" autocomplete="on">
       <div class="brand brand-lg">
-        <img class="brand-logo" src="/assets/logo.png" alt="One Stop Marketing">
+        <img class="brand-logo" src="/assets/logo.png" alt="One Stop Marketing Solutions">
         <div class="brand-word"><span>One Stop</span> Marketing</div>
       </div>
       <h1>Client Portal</h1>
@@ -21,6 +22,10 @@
       <label>Password<input name="password" type="password" autocomplete="current-password" required></label>
       <p id="login-error" class="error" role="alert"></p>
       <button class="btn btn-primary btn-block" type="submit">Sign in</button>
+      <div class="prepared-for">
+        <span class="muted">Prepared for</span>
+        <img src="/assets/aef-logo.svg" alt="Allied Elite Financial">
+      </div>
     </form>
   </section>
 
@@ -28,12 +33,15 @@
   <div id="app-view" hidden>
     <header class="topbar">
       <div class="brand">
-        <img class="brand-logo" src="/assets/logo.png" alt="One Stop Marketing">
+        <img class="brand-logo" src="/assets/logo.png" alt="One Stop Marketing Solutions">
         <div class="brand-word"><span>One Stop</span> Marketing</div>
       </div>
       <div class="topbar-client">
-        <span class="muted">Prepared for</span>
-        <strong id="client-name">Allied Elite Financial</strong>
+        <img class="client-mark" src="/assets/aef-mark.svg" alt="">
+        <div>
+          <span class="muted">Prepared for</span>
+          <strong id="client-name">Allied Elite Financial</strong>
+        </div>
       </div>
       <div class="topbar-right">
         <label class="month-pick">Month
@@ -52,7 +60,7 @@
       <a href="#/manage" data-tab="manage" class="admin-only">Manage Data</a>
     </nav>
     <main id="main" class="container"></main>
-    <footer class="footer">Reporting by <strong>One Stop Marketing</strong> for Allied Elite Financial</footer>
+    <footer class="footer">Reporting by <strong>One Stop Marketing Solutions</strong> for Allied Elite Financial</footer>
   </div>
 
   <dialog id="modal"><form method="dialog" id="modal-form"></form></dialog>

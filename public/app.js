@@ -3,7 +3,7 @@
 /* ---------------- state ---------------- */
 const state = { user: null, data: null, month: null, charts: [], websiteFilter: 'all', analyticsAgent: null };
 const PLATFORMS = ['Facebook', 'Instagram', 'LinkedIn', 'TikTok', 'YouTube', 'X (Twitter)', 'Google Business', 'Pinterest', 'Threads'];
-const COLORS = ['#0b2a4a', '#f28c28', '#2f80ed', '#1f9d55', '#9b51e0', '#eb5757', '#00a3a3', '#b7791f'];
+const COLORS = ['#161616', '#ff5500', '#f5a300', '#7a7a7a', '#c43c00', '#2f80ed', '#1f9d55', '#9b51e0'];
 
 /* ---------------- helpers ---------------- */
 const $ = sel => document.querySelector(sel);
@@ -90,7 +90,8 @@ async function enterApp(user) {
   state.user = user;
   state.data = await api('/api/data');
   document.body.classList.toggle('is-admin', isAdmin());
-  $('#user-chip').textContent = `${user.name}${isAdmin() ? ' · Admin' : ''}`;
+  $('#user-chip').textContent = isAdmin() ? `${user.name} · Admin` : '';
+  $('#user-chip').hidden = !isAdmin();
   $('#login-view').hidden = true;
   $('#app-view').hidden = false;
   refreshMonths();
@@ -164,8 +165,9 @@ function viewSummary(el) {
 
   el.innerHTML = `
     <div class="page-head">
+      <div class="client-hero"><img src="/assets/aef-logo.svg" alt="${esc(state.data.settings.clientName)}">
       <div><h2>${esc(state.data.settings.clientName)} — Marketing Summary</h2>
-      <p class="muted">Everything One Stop Marketing is building and managing for you · ${monthLabel(m) || 'No months recorded yet'}</p></div>
+      <p class="muted">Everything One Stop Marketing Solutions is building and managing for you · ${monthLabel(m) || 'No months recorded yet'}</p></div></div>
       <button class="btn" onclick="window.print()">Print / PDF</button>
     </div>
     <div class="kpis">
@@ -199,7 +201,7 @@ function viewSummary(el) {
     { label: 'Sales manager pages', data: months.map(mm => totals(mm).mgrVisitors), backgroundColor: COLORS[1], stack: 's' },
   ] }, options: { scales: { x: { stacked: true }, y: { stacked: true, beginAtZero: true } } } });
   chart('c-posts', { type: 'line', data: { labels, datasets: [
-    { label: 'Posts', data: months.map(mm => totals(mm).posts), borderColor: COLORS[1], backgroundColor: 'rgba(242,140,40,.15)', fill: true, tension: .3 },
+    { label: 'Posts', data: months.map(mm => totals(mm).posts), borderColor: COLORS[1], backgroundColor: 'rgba(255,85,0,.12)', fill: true, tension: .3 },
   ] }, options: { scales: { y: { beginAtZero: true } } } });
   chart('c-status', { type: 'doughnut', data: { labels: ['Active', 'Inactive'], datasets: [{ data: [t.active, t.inactive], backgroundColor: ['#1f9d55', '#d0d5dd'] }] } });
 }

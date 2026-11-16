@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-label="Allied Elite Financial">
+  <defs>
+    <linearGradient id="g" x1="684" y1="602" x2="1369" y2="166" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00f5a0"/><stop offset=".45" stop-color="#1ad4fb"/><stop offset="1" stop-color="#2f8bff"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="1000" y1="166" x2="1300" y2="602" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#10e8d0"/><stop offset=".45" stop-color="#1ad4fb"/><stop offset="1" stop-color="#2f8bff"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(500 0) scale(.6) translate(-1026 -150)">
+    <path fill="url(#g)" d="M684 602 840 330H1026L874 602Z"/>
+    <path fill="url(#g2)" d="M934 166H1118L1165 247H1075L1122 334H1215L1261 412H1157L1204 499H1311L1369 602H1181Z"/>
+  </g>
+  <g font-family="Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#130a2b" text-anchor="middle">
+    <text x="500" y="408" font-size="104" font-weight="400" letter-spacing="2">ALLIED ELITE</text>
+    <text x="500" y="508" font-size="82" font-weight="800" letter-spacing="38">FINANCIAL</text>
+  </g>
+</svg>

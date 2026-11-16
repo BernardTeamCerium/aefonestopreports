@@ -27,9 +27,11 @@ ADMIN_PASSWORD='choose-one' CLIENT_PASSWORD='choose-another' npm start
 ```
 Then open http://localhost:3000.
 
-## Logo & colors
-Put the One Stop Marketing logo at `public/assets/logo.png`. Until it exists, a text wordmark is shown.
-Brand colors are the CSS variables at the top of `public/styles.css` (`--brand`, `--accent`).
+## Logos & colors
+- `public/assets/logo.png` – One Stop Marketing Solutions logo (header + login).
+- `public/assets/icon.png` – browser tab icon cropped from the logo.
+- `public/assets/aef-logo.svg` / `aef-mark.svg` – Allied Elite Financial logo and mark (header, login "Prepared for", Summary page). These are vector recreations; to use the official artwork, overwrite them with the official SVG files (or save a PNG and update the `src` in `public/index.html` and `public/app.js`).
+- Brand colors are CSS variables at the top of `public/styles.css`: One Stop orange/charcoal (`--accent`, `--brand`) and AEF colors (`--aef-*`).
 
 ## Data
 - Live data is saved to `data/db.json` (not committed). On first run it is seeded from `data/db.sample.json`, which contains **placeholder sample agents** — replace them via Manage Data, or use **Clear all data** to start empty.
